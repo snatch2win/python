@@ -4,24 +4,24 @@
 import math
 
 print("Введите первое число")
-first_number = int(input())
+a = int(input())
 print("Введите второе число")
-second_number = int(input())
+b = int(input())
 print("Введите третье число")
-third_number = int(input())
+c = int(input())
 
 opposite = -second_number
 
-decision = second_number ** 2 - 4 * first_number * third_number
+decision = b ** 2 - 4 * a * c
 print("РЕШЕНИЕ:")
 print("Находим дискриминант квадратного уравнения:")
 print(decision)
 
 if decision > 0:
     print("Дискриминант больше нуля, квадратное уравнение имеет два корня:")
-    x1 = (opposite - math.sqrt(decision)) / (2 * first_number)
+    x1 = (opposite - math.sqrt(decision)) / (2 * a)
     print(x1)
-    x2 = (opposite + math.sqrt(decision)) / (2 * first_number)
+    x2 = (opposite + math.sqrt(decision)) / (2 * a)
     print(x2)
 else:
     print("Так как дискриминант меньше нуля, то уравнение не имеет действительных решений.")

@@ -10,11 +10,12 @@ b = int(input())
 print("Введите третье число")
 c = int(input())
 
-opposite = -second_number
+opposite = -b
 
 decision = b ** 2 - 4 * a * c
 print("РЕШЕНИЕ:")
 print("Находим дискриминант квадратного уравнения:")
+print("дискриминант равен: ")
 print(decision)
 
 if decision > 0:
@@ -23,6 +24,9 @@ if decision > 0:
     print(x1)
     x2 = (opposite + math.sqrt(decision)) / (2 * a)
     print(x2)
+elif decision == 0:
+    print("ERROR!!!")
+    print("Дискриминант не может равняться нулю!!")
 else:
     print("Так как дискриминант меньше нуля, то уравнение не имеет действительных решений.")
 
